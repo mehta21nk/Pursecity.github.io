@@ -17,7 +17,7 @@ body{
 }
 .both{
     display:flex;
-    widht:fit-content;
+    width:fit-content;
     height:fit-content;
 }
 .logo{
