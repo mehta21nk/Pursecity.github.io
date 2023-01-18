@@ -1,279 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Products | Purse City</title>
 
     <!--CSS Style sheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-</head>
-
-<body id="bg">
-
+  <body style="background: radial-gradient(#ffff, #c1e3f0)" id="bg">
     <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="Images/logo6.png" class="logo" alt="Logo" />
+        </div>
 
-        <div class="navbar">
-            <div class="logo">
-                <img src="Images/logo6.png" class="logo" alt="Logo">
-            </div>
-
-       <!--nav bar (home about contact etc..)-->
-       <div>
-        <nav>
+        <!--nav bar (home about contact etc..)-->
+        <div>
+          <nav>
             <ul id="menuitems">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="account.html">Account</a></li>
-       
-        </ul>
-    
-        </nav>
-    </div>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+        </div>
 
-    <!--Cart Icon-->
-    <img src="Images/carticon1.png" alt="Cart Icon" class="cart">
-    <img src="Images/menu.png" class="menu-icon" alt="Menu Icon" onclick="menutoggle()">
-</div>
-</div>
-
-<div class="small-container">
-    <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-            <option value="">Default Shorting</option>
-            <option value="">Short by price</option>
-            <option value="">Short by Populatity</option>
-            <option value="">Short by rating</option>
-            <option value="">Short by sale</option>
-        </select>
+        <!--Cart Icon-->
+        <div class="both">
+          <img src="Images/carticon1.png" class="cart" alt="Cart Icon" onclick="openCart()" />
+          <img src="Images/menu.png" class="menu-icon" alt="Menu Icon" onclick="menutoggle()" />
+          <div class="cartNum"><span id="NumOfItem" >0</span></div>
+        </div>
+      </div>
     </div>
 
     <div class="small-container">
+        <div class="P_Head"><h2>PRODUCTS</h2></div>
+      <div class="small-container">
         <div class="row">
-            <div class="col-4">
-                <a href="productdetail1.html"><img src="PurseCity/21b.png" alt="Hand Bag"></a>
-                <a href="productdetail1.html"><h4>Blue Haathi Hand Bag</h4></a>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-                </div>
-                <p><del>Rs 500.00</del><br>Rs 190.00</p>
+          <div class="col-4">
+            <a href="productdetail1.html"
+              ><img src="PurseCity/21b.png" alt="Hand Bag"
+            /></a>
+            <a href="productdetail1.html"><h4>Blue Haathi Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
             </div>
-            <div class="col-4">
-               <a href="pd2.html"> <img src="PurseCity/6b.png" alt="Hand Bag"></a>
-               <a href="pd2.html"><h4> Daandiya Farsa Hand Bag </h4></a>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                </div>
-                <p><del>Rs 400.00</del><br>Rs 150.00</p>
+            <p><del>Rs 500.00</del><br />Rs 190.00</p>
+            <div class="addCart"><span class="cartBtn" onclick="productdetail1()">Add to Cart</span></div>
+          </div>
+          <div class="col-4">
+            <a href="pd2.html">
+              <img src="PurseCity/6b.png" alt="Hand Bag"
+            /></a>
+            <a href="pd2.html"><h4>Daandiya Farsa Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
             </div>
-            <div class="col-4">
-               <a href="pd3.html"> <img src="PurseCity/14b.png" alt="Hand Bag"></a>
-               <a href="pd3.html"> <h4>Cream Long Hand Bag </h4></a>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-                </div>
-                <p><del>Rs 450.00</del><br> Rs 210.00</p>
+            <p><del>Rs 400.00</del><br />Rs 150.00</p>
+            <div class="addCart"><span class="cartBtn" onclick="pd2()">Add to Cart</span></div>
+          </div>
+          <div class="col-4">
+            <a href="pd3.html">
+              <img src="PurseCity/14b.png" alt="Hand Bag"
+            /></a>
+            <a href="pd3.html"> <h4>Cream Long Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
             </div>
-            <div class="col-4">
-                <a href="Product Detail.html"><img src="PurseCity/17a.png" alt="Hand Bag"></a>
-                <a href="Product Detail.html"><h4>Blue Mayur Hand Bag </h4></a>
-                <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <i class="fa fa-star-o"></i>
-                </div>
-                <p><del>Rs 460.00</del><br> Rs 220.00</p>
+            <p>
+              <del>Rs 450.00</del><br />
+              Rs 210.00
+            </p>
+            <div class="addCart"><span class="cartBtn" onclick="pd3()">Add to Cart</span></div>
+          </div>
+          <div class="col-4">
+            <a href="productdetail.html"
+              ><img src="PurseCity/17a.png" alt="Hand Bag"
+            /></a>
+            <a href="productdetail.html"><h4>Blue Mayur Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
             </div>
+            <p>
+              <del>Rs 460.00</del><br />
+              Rs 220.00
+            </p>
+            <div class="addCart"><span class="cartBtn" onclick="productdetail()">Add to Cart</span></div>
+          </div>
         </div>
-    
 
-    <div class="row">
-        <div class="col-4">
-            <a href="pd4.html"><img src="PurseCity/7c.png" alt="Hand Bag"></a>
-            <a href="pd4.html"> <h4>Cream Mayur Hand Bag </h4></a>
-            <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            </div>
-            <p><del>Rs 390.00</del><br>Rs 229.00</p>
-        </div>
-        <div class="col-4">
-           <a href="pd5.html"> <img src="PurseCity/8b.png" alt="Hand Bag"></a>
-           <a href="pd5.html"> <h4>Golden Handle Hand Bag </h4></a>
-            <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            </div>
-            <p><del>Rs 459.00</del><br>Rs 205.00</p>
-        </div>
-        <div class="col-4">
-           <a href="pd6.html"> <img src="PurseCity/16c.png" alt="Hand Bag"></a>
-           <a href="pd6.html"> <h4>Golden Chain Hand Bag </h4></a>
-            <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            </div>
-            <p><del>Rs 349.00</del><br>Rs 198.00</p>
-        </div>
-        <div class="col-4">
-           <a href="pd7.html"> <img src="PurseCity/19a.png" alt="Hand Bag"></a>
-           <a href="pd7.html"><h4> Mayur Hand Bag </h4></a>
-            <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-            </div>
-            <p><del>Rs 259.00</del><br>Rs 179.00</p>
-        </div>
         <div class="row">
+          <div class="col-4">
+            <a href="pd4.html"><img src="PurseCity/7c.png" alt="Hand Bag" /></a>
+            <a href="pd4.html"> <h4>Cream Mayur Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p><del>Rs 390.00</del><br />Rs 229.00</p>
+            <div class="addCart"><span class="cartBtn" onclick="pd4()">Add to Cart</span></div>
+          </div>
+          <div class="col-4">
+            <a href="pd5.html">
+              <img src="PurseCity/8b.png" alt="Hand Bag"
+            /></a>
+            <a href="pd5.html"> <h4>Golden Handle Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p><del>Rs 459.00</del><br />Rs 205.00</p>
+            <div class="addCart"><span class="cartBtn" onclick="pd5()">Add to Cart</span></div>
+          </div>
+          <div class="col-4">
+            <a href="pd6.html">
+              <img src="PurseCity/16c.png" alt="Hand Bag"
+            /></a>
+            <a href="pd6.html"> <h4>Golden Chain Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p><del>Rs 349.00</del><br />Rs 198.00</p>
+            <div class="addCart"><span class="cartBtn" onclick="pd6()">Add to Cart</span></div>
+          </div>
+          <div class="col-4">
+            <a href="pd7.html">
+              <img src="PurseCity/19a.png" alt="Hand Bag"
+            /></a>
+            <a href="pd7.html"><h4>Mayur Hand Bag</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p><del>Rs 259.00</del><br />Rs 179.00</p>
+            <div class="addCart"><span class="cartBtn" onclick="pd7()">Add to Cart</span></div>
+          </div>
+          <div class="row">
             <div class="col-4">
-                <a href="pd8.html"><img src="PurseCity/18a.png" alt="Hand Bag"></a>
-                <a href="pd8.html"><h4> Mayur Hand Bag </h4></a>
-                <div class="rating">
+              <a href="pd8.html"
+                ><img src="PurseCity/18a.png" alt="Hand Bag"
+              /></a>
+              <a href="pd8.html"><h4>Mayur Hand Bag</h4></a>
+              <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
-                </div>
-                <p><del>Rs 389.00</del><br>Rs 215.00</p>
+              </div>
+              <p><del>Rs 389.00</del><br />Rs 215.00</p>
+              <div class="addCart"><span class="cartBtn" onclick="pd8()">Add to Cart</span></div>
             </div>
             <div class="col-4">
-               <a href="pd9.html"><img src="PurseCity/23a.png" alt="Hand Bag"></a> 
-               <a href="pd9.html"> <h4> Billi Handle Hand Bag </h4></a> 
-                <div class="rating">
+              <a href="pd9.html"
+                ><img src="PurseCity/23a.png" alt="Hand Bag"
+              /></a>
+              <a href="pd9.html"> <h4>Billi Handle Hand Bag</h4></a>
+              <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
-                </div>
-                <p><del>Rs 410.00</del><br>Rs 229.00</p>
+              </div>
+              <p><del>Rs 410.00</del><br />Rs 229.00</p>
+              <div class="addCart"><span class="cartBtn" onclick="pd9()">Add to Cart</span></div>
             </div>
             <div class="col-4">
-               <a href="pd10.html"> <img src="PurseCity/26a.png" alt="Hand Bag"></a>
-               <a href="pd10.html"><h4> Churi Handle Hand Purse </h4></a>
-                <div class="rating">
+              <a href="pd10.html">
+                <img src="PurseCity/26a.png" alt="Hand Bag"
+              /></a>
+              <a href="pd10.html"><h4>Churi Handle Hand Purse</h4></a>
+              <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
-                </div>
-                <p><del>Rs 426.00</del><br>Rs 219.00</p>
+              </div>
+              <p><del>Rs 426.00</del><br />Rs 219.00</p>
+              <div class="addCart"><span class="cartBtn" onclick="pd10()">Add to Cart</span></div>
             </div>
             <div class="col-4">
-               <a href="pd11.html"> <img src="PurseCity/10b.png" alt="Hand Bag"></a>
-               <a href="pd11.html"> <h4> Kachra Dori Hand Bag </h4></a>
-                <div class="rating">
+              <a href="pd11.html">
+                <img src="PurseCity/10b.png" alt="Hand Bag"
+              /></a>
+              <a href="pd11.html"> <h4>Kachra Dori Hand Bag</h4></a>
+              <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
                 <i class="fa fa-star-o"></i>
-                </div>
-                <p><del>Rs 398.00</del><br>Rs 236.00</p>
+              </div>
+              <p><del>Rs 398.00</del><br />Rs 236.00</p>
+              <div class="addCart"><span class="cartBtn" onclick="pd11()">Add to Cart</span></div>
             </div>
-    
-</div>
-    
-<div class="page-btn">
-    <span>1</span>
-    <a href="products2.html"><span>2</span></a>
-    <span>3</span>
-    <span>4</span>
-    <span>&#8594;</span>
-</div>
+          </div>
 
-</div>
+          <div class="page-btn">
+            <span>1</span>
+            <a href="products2.html"><span>2</span></a>
+            <span>3</span>
+            <span>4</span>
+            <a href="products2.html"><span>&#8594;</span></a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
-<div class="footer">
-    <div class="container">
+    <div class="footer">
+      <div class="container">
         <div class="row">
-            <div class="footer-col-1">
-                <img src="Images/logo6.png" class="logo-footer" alt="Logo">
-                <p>Our purspose is to make Hand Purse Easily Available for all.The Purse Which are available on this platform are made by using cotton Clothes.So these are Eco-friendly.</p>
-            </div>
-            <div class="footer-col-2">
-                <h3 id="contact">Contact Us</h3>
-                <ul>
-                    <li class="Followus"> <i class="fa fa-envelope" style="font-size:24px"></i><a class="Followus" href="https://www.google.com/gmail/">pursecity@gmail.com</a> </li>
-                    <li class="Followus"><i style="font-size:24px" class="fa">&#xf095;</i>  </li>
-                    <li class="Followus"> <i style="font-size:24px" class="fa">&#xf232;</i></li>
-                    <li class="Followus">Join Us</li>
-                </ul>
-            </div>
-            <div class="footer-col-3">
-                <h3>Follw Us On</h3>
-                <ul>
-                    <li><i style="font-size:24px" class="fa">&#xf09a;</i> 
-                        <a class="Followus" href="https://www.facebook.com/">Facebook</a> </li>
-                    <li> <i style="font-size:24px" class="fa">&#xf099;</i>  <a class="Followus" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">Twitter</a> </li>
-                    <li>  <i style="font-size:24px" class="fa">&#xf16d;</i><a class="Followus" href="https://www.instagram.com/"> Instagram</a></li>
-                    <li> <i style="font-size:24px" class="fa">&#xf16a;</i> <a class="Followus" href="https://www.youtube.com/">YouTube</a> </li>
-                </ul>
-            </div>
+          <div class="footer-col-1">
+            <img src="Images/logo6.png" class="logo-footer" alt="Logo" />
+            <p>
+              Our purspose is to make Hand Purse Easily Available for all.The
+              Purse Which are available on this platform are made by using
+              cotton Clothes.So these are Eco-friendly.
+            </p>
+          </div>
+          <div class="footer-col-2">
+            <h3 id="contact">Contact Us</h3>
+            <ul>
+              <li class="Followus">
+                <i class="fa fa-envelope" style="font-size: 24px"></i
+                ><a class="Followus" href="https://www.google.com/gmail/"
+                  >pursecity@gmail.com</a
+                >
+              </li>
+              <li class="Followus">
+                <i style="font-size: 24px" class="fa">&#xf095; </i>
+                <a class="Followus" href="tel:+91 610000 0000"
+                  >+91 610000 0000</a
+                >
+              </li>
+              <li class="Followus">
+                <i style="font-size: 24px" class="fa">&#xf232; </i>
+                <a class="Followus" href="tel:+91 610000 0000"
+                  >+91 610000 0000</a
+                >
+              </li>
+              <!-- <li class="Followus">Join Us</li> -->
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follw Us On</h3>
+            <ul>
+              <li>
+                <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                <a class="Followus" href="https://www.facebook.com/"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <i style="font-size: 24px" class="fa">&#xf099;</i>
+                <a
+                  class="Followus"
+                  href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <i style="font-size: 24px" class="fa">&#xf16d;</i
+                ><a class="Followus" href="https://www.instagram.com/">
+                  Instagram</a
+                >
+              </li>
+              <li>
+                <i style="font-size: 24px" class="fa">&#xf16a;</i>
+                <a class="Followus" href="https://www.youtube.com/">YouTube</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <hr>
+        <hr />
         <p class="copyright">Copy Right 2022 - Purse City</p>
+      </div>
+      <!-- Slroll to top -->
+    <div id="topBtn" class="toTop" onclick="topFunction()">
+      <div class="topBtn_box">
+        <img src="Images/arrowTop.png" alt="topbtn">
+      </div>
     </div>
-</div>
-
-    <!-- JS for toggle menu -->
-    <script>
-        var menuitems=document.getElementById("menuitems")
-        menuitems.style.maxHeight="0px";
-        function menutoggle(){
-            if(menuitems.style.maxHeight== "0px")
-            {
-              menuitems.style.maxHeight="200px"
-            }
-            else
-            {
-                menuitems.style.maxHeight="0px"
-            }
-
-        }
-
-    </script>
-</body>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

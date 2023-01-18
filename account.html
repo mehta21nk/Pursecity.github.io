@@ -34,7 +34,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="account.html">Account</a></li>
             </ul>
     
@@ -42,8 +42,11 @@
     </div>
 
     <!--Cart Icon-->
-    <img src="Images/carticon1.png" class="cart" alt="Cart">
-    <img src="Images/menu.png" class="menu-icon" alt="Menu" onclick="menutoggle()">
+    <div class="both">
+      <img src="Images/carticon1.png" class="cart" alt="Cart Icon" onclick="openCart()" />
+      <img src="Images/menu.png" class="menu-icon" alt="Menu Icon" onclick="menutoggle()" />
+      <div class="cartNum"><span id="NumOfItem" >0</span></div>
+    </div> 
 </div>
  </div>
 
@@ -51,7 +54,7 @@
 <div class="account-page">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 col-3-ImgPart">
                <img src="Images/image1.png" alt="Image">
             </div>
             <div class="col-3">
@@ -80,74 +83,83 @@
     </div>
 </div>
 
-    <!-- ----- Footer---- -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <img src="Images/logo6.png" class="logo-footer" alt="Logo">
-                    <p>Our purspose is to make Hand Purse Easily Available for all.The Purse Which are available on this platform are made by using cotton Clothes.So these are Eco-friendly.</p>
-                </div>
-                <div class="footer-col-2">
-                    <h3 id="contact">Contact Us</h3>
-                    <ul>
-                        <li class="Followus"> <i class="fa fa-envelope" style="font-size:24px"></i><a class="Followus" href="https://www.google.com/gmail/">pursecity@gmail.com</a> </li>
-                        <li class="Followus"><i style="font-size:24px" class="fa">&#xf095;</i>  </li>
-                        <li class="Followus"> <i style="font-size:24px" class="fa">&#xf232;</i>
-                        <li class="Followus">Join Us</li>
-                    </ul>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Follw Us On</h3>
-                    <ul>
-                        <li><i style="font-size:24px" class="fa">&#xf09a;</i> 
-                            <a class="Followus" href="https://www.facebook.com/">Facebook</a> </li>
-                        <li> <i style="font-size:24px" class="fa">&#xf099;</i>  <a class="Followus" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">Twitter</a> </li>
-                        <li>  <i style="font-size:24px" class="fa">&#xf16d;</i><a class="Followus" href="https://www.instagram.com/"> Instagram</a></li>
-                        <li> <i style="font-size:24px" class="fa">&#xf16a;</i> <a class="Followus" href="https://www.youtube.com/">YouTube</a> </li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copy Right 2022 - Purse City</p>
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <img src="Images/logo6.png" class="logo-footer" alt="Logo" />
+          <p>
+            Our purspose is to make Hand Purse Easily Available for all.The
+            Purse Which are available on this platform are made by using
+            cotton Clothes.So these are Eco-friendly.
+          </p>
         </div>
+        <div class="footer-col-2">
+          <h3 id="contact">Contact Us</h3>
+          <ul>
+            <li class="Followus">
+              <i class="fa fa-envelope" style="font-size: 24px"></i
+              ><a class="Followus" href="https://www.google.com/gmail/"
+                >pursecity@gmail.com</a
+              >
+            </li>
+            <li class="Followus">
+              <i style="font-size: 24px" class="fa">&#xf095; </i>
+              <a class="Followus" href="tel:+91 610000 0000"
+                >+91 610000 0000</a
+              >
+            </li>
+            <li class="Followus">
+              <i style="font-size: 24px" class="fa">&#xf232; </i>
+              <a class="Followus" href="tel:+91 610000 0000"
+                >+91 610000 0000</a
+              >
+            </li>
+            <!-- <li class="Followus">Join Us</li> -->
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <h3>Follw Us On</h3>
+          <ul>
+            <li>
+              <i style="font-size: 24px" class="fa">&#xf09a;</i>
+              <a class="Followus" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <i style="font-size: 24px" class="fa">&#xf099;</i>
+              <a
+                class="Followus"
+                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <i style="font-size: 24px" class="fa">&#xf16d;</i
+              ><a class="Followus" href="https://www.instagram.com/">
+                Instagram</a
+              >
+            </li>
+            <li>
+              <i style="font-size: 24px" class="fa">&#xf16a;</i>
+              <a class="Followus" href="https://www.youtube.com/">YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copy Right 2022 - Purse City</p>
     </div>
-
-<!-- JS for toggle menu -->
-    <script>
-        var menuitems=document.getElementById("menuitems")
-        menuitems.style.maxHeight="0px";
-        function menutoggle(){
-            if(menuitems.style.maxHeight== "0px")
-            {
-              menuitems.style.maxHeight="200px"
-            }
-            else
-            {
-                menuitems.style.maxHeight="0px"
-            }
-
-        }
-
-    </script>
-
+    <!-- Slroll to top -->
+    <div id="topBtn" class="toTop" onclick="topFunction()">
+      <div class="topBtn_box">
+        <img src="Images/arrowTop.png" alt="topbtn">
+      </div>
+    </div>
+  </div>
     <!-- ----------------------JS FOR Toggle Form------------------ -->
-    <script>
-        var Loginform = document.getElementById("Loginform");
-        var Regform = document.getElementById("Regform");
-        var Indicator = document.getElementById("Indicator");
-
-        function register(){
-            Regform.style.transform = "translateX(0px)";
-            Loginform.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(100px)";
-        }
-        function login(){
-            Regform.style.transform = "translateX(300px)";
-            Loginform.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-    </script>
+   <script src="script.js"></script>
 
 </body>
 </html>

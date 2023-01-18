@@ -34,7 +34,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="account.html">Account</a></li>
        
         </ul>
@@ -42,9 +42,12 @@
         </nav>
     </div>
 
-    <!--Cart Icon-->
-    <img src="Images/carticon1.png" alt="Cart Icon" class="cart">
-    <img src="Images/menu.png" class="menu-icon" alt="Menu" onclick="menutoggle()">
+ <!--Cart Icon-->
+ <div class="both">
+  <img src="Images/carticon1.png" class="cart" alt="Cart Icon" onclick="openCart()" />
+  <img src="Images/menu.png" class="menu-icon" alt="Menu Icon" onclick="menutoggle()" />
+  <div class="cartNum"><span id="NumOfItem" >0</span></div>
+</div>
 </div>
 </div>
 
@@ -78,7 +81,7 @@
                 <h1> Mayur Hand Bag</h1>
                 <h4><del>Rs 550.00</del> <br> 230.00</h4>
                   <input type="number" value="1">
-                  <a href=" " class="btn">Add to Cart</a>
+                  <span class="btn" onclick="pd8()">Add to Cart</span>
                   <h3>Product Detail  <i class="fa fa-indent"></i> </h3>
                   <br>
                   <p>Give a new look to your fashion Using this Hand Purse.This is a cotton bag. This hand bag is eco friendly</p>
@@ -86,51 +89,57 @@
         </div>
     </div>
     </div>
+    <!-- ---------------------------Review------------------------- -->
 
-<!-- ---------------------------Review------------------------- -->
-
-<h2 class="heading">Costumer Review</h2>
-        <div class="">
-            <div class="">
-                <div class="review">
-                    <i class="fa fa-quote-left"></i> <br>
-                        <h3>  <img src="Images/reviewer1.webp" class="reviewer-img" alt="Reviewer">Yasi Poly </h3>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod rem minima sit a magni facilis dignissimos vero earum deserunt.</p>
-                        </div>
-                </div>
-                <div class="review">
-                    <i class="fa fa-quote-left"></i>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <h3> <img src="Images/reviewer2.webp" class="reviewer-img" alt="Reviewer"> Tasyana Roya</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod rem minima sit a magni facilis dignissimos vero earum deserunt.</p>
-                        </div>  
-                </div>
-                <div class="review">
-                    <i class="fa fa-quote-left"></i>
-                    <h3>  <img src="Images/reviewer3.jpg" class="reviewer-img" alt="Reviewer"> Eena Motin</h3>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod rem minima sit a magni facilis dignissimos vero earum deserunt.</p>
-                        </div>     
-                </div>
-            </div>
-        </div>
-
+    <h2 class="heading">Costumer Review</h2>
+    <div class="review">
+      <div class="img-and-name">
+        <img src="Images/reviewer1.webp" class="reviewer-img" alt="Reviewer" />
+        <h3>Ramya</h3>
+      </div>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <p class="comment">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          quod rem minima sit a magni facilis dignissimos vero earum deserunt.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, quam
+          error quos, sint iste atque consectetur facere minus vel officiis
+          nesciunt, nobis accusantium possimus repudiandae. Veritatis itaque
+          eligendi animi omnis!
+        </p>
+      </div>
+      <div id="sampleimg" class="sample-img">
+        <div class="img-box"><img class="sampleImg" src="PurseCity/18a.png" alt="" /></div>
+        <div class="img-box"><img class="sampleImg" src="PurseCity/18b.png" alt="" /></div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="img-and-name">
+        <img src="Images/reviewer2.webp" class="reviewer-img" alt="Reviewer" />
+        <h3>Maltra</h3>
+      </div>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <p class="comment">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          quod rem minima sit a magni facilis dignissimos vero earum deserunt.
+          Lorem ipsum dolor sit amet consectetur
+        </p>
+      </div>
+      <div  class="sample-img">
+        <div class="img-box"><img class="sampleImg" src="PurseCity/18a.png" alt="" /></div>
+        <div class="img-box"><img class="sampleImg" src="PurseCity/18b.png" alt="" /></div>
+        <div class="img-box"><img class="sampleImg" src="PurseCity/18c.png" alt="" /></div>
+      </div>
+    </div>
 <!-- ------------------Related Products-------------- -->
 <h2 class="heading">Related Products</h2>
     <div class="small-container">
@@ -189,79 +198,79 @@
     <!-- ----- Footer---- -->
     <div class="footer">
         <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <img src="Images/logo6.png" class="logo-footer" alt="Logo">
-                    <p>Our purspose is to make Hand Purse Easily Available for all.The Purse Which are available on this platform are made by using cotton Clothes.So these are Eco-friendly.</p>
-                </div>
-                <div class="footer-col-2">
-                    <h3 id="contact">Contact Us</h3>
-                    <ul>
-                        <li class="Followus"> <i class="fa fa-envelope" style="font-size:24px"></i><a class="Followus" href="https://www.google.com/gmail/">pursecity@gmail.com</a> </li>
-                        <li class="Followus"><i style="font-size:24px" class="fa">&#xf095;</i>  </li>
-                        <li class="Followus"> <i style="font-size:24px" class="fa">&#xf232;</i></li>
-                        <li class="Followus">Join Us</li>
-                    </ul>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Follw Us On</h3>
-                    <ul>
-                        <li><i style="font-size:24px" class="fa">&#xf09a;</i> 
-                            <a class="Followus" href="https://www.facebook.com/">Facebook</a> </li>
-                        <li> <i style="font-size:24px" class="fa">&#xf099;</i>  <a class="Followus" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">Twitter</a> </li>
-                        <li>  <i style="font-size:24px" class="fa">&#xf16d;</i><a class="Followus" href="https://www.instagram.com/"> Instagram</a></li>
-                        <li> <i style="font-size:24px" class="fa">&#xf16a;</i> <a class="Followus" href="https://www.youtube.com/">YouTube</a> </li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="footer-col-1">
+              <img src="Images/logo6.png" class="logo-footer" alt="Logo" />
+              <p>
+                Our purspose is to make Hand Purse Easily Available for all.The
+                Purse Which are available on this platform are made by using
+                cotton Clothes.So these are Eco-friendly.
+              </p>
             </div>
-            <hr>
-            <p class="copyright">Copy Right 2022 - Purse City</p>
+            <div class="footer-col-2">
+              <h3 id="contact">Contact Us</h3>
+              <ul>
+                <li class="Followus">
+                  <i class="fa fa-envelope" style="font-size: 24px"></i
+                  ><a class="Followus" href="https://www.google.com/gmail/"
+                    >pursecity@gmail.com</a
+                  >
+                </li>
+                <li class="Followus">
+                  <i style="font-size: 24px" class="fa">&#xf095; </i>
+                  <a class="Followus" href="tel:+91 610000 0000"
+                    >+91 610000 0000</a
+                  >
+                </li>
+                <li class="Followus">
+                  <i style="font-size: 24px" class="fa">&#xf232; </i>
+                  <a class="Followus" href="tel:+91 610000 0000"
+                    >+91 610000 0000</a
+                  >
+                </li>
+                <!-- <li class="Followus">Join Us</li> -->
+              </ul>
+            </div>
+            <div class="footer-col-3">
+              <h3>Follw Us On</h3>
+              <ul>
+                <li>
+                  <i style="font-size: 24px" class="fa">&#xf09a;</i>
+                  <a class="Followus" href="https://www.facebook.com/"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <i style="font-size: 24px" class="fa">&#xf099;</i>
+                  <a
+                    class="Followus"
+                    href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <i style="font-size: 24px" class="fa">&#xf16d;</i
+                  ><a class="Followus" href="https://www.instagram.com/">
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <i style="font-size: 24px" class="fa">&#xf16a;</i>
+                  <a class="Followus" href="https://www.youtube.com/">YouTube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">Copy Right 2022 - Purse City</p>
         </div>
+        <!-- Slroll to top -->
+    <div id="topBtn" class="toTop" onclick="topFunction()">
+      <div class="topBtn_box">
+        <img src="Images/arrowTop.png" alt="topbtn">
+      </div>
     </div>
-
-    <!-- JS for toggle menu -->
-    <script>
-        var menuitems=document.getElementById("menuitems")
-        menuitems.style.maxHeight="0px";
-        function menutoggle(){
-            if(menuitems.style.maxHeight== "0px")
-            {
-              menuitems.style.maxHeight="200px"
-            }
-            else
-            {
-                menuitems.style.maxHeight="0px"
-            }
-
-        }
-
-    </script>
-
-    <!-- ---------------------Js fo product Gallery---------------------- -->
-<script>
-    var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("Small-Img");
-
-    SmallImg[0].onclick = function()
-    {
-        ProductImg.src = SmallImg[0].src;
-    }
-    SmallImg[1].onclick = function()
-    {
-        ProductImg.src = SmallImg[1].src;
-    }
-    SmallImg[2].onclick = function()
-    {
-        ProductImg.src = SmallImg[2].src;
-    }
-    SmallImg[3].onclick = function()
-    {
-        ProductImg.src = SmallImg[3].src;
-    } 
-</script>
-
-
-
-
+      </div>
+    <script src="script.js"></script>
 </body>
 </html>
